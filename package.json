@@ -1,0 +1,23 @@
+{
+  "name": "homework-node",
+  "version": "1.0.0",
+  "description": "task for training skill",
+  "private": false,
+  "maintainers": [
+    "Molchanov Kirill <kirill-m@yandex-team.ru>"
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/k03mad/homework-node.git"
+    }
+  ],
+  "dependencies": {
+    "chai": "3.5.0",
+    "mocha": "2.5.3",
+    "eslint": "2.12.0"
+  },
+  "engines": {
+    "node": ">=4"
+  }
+}

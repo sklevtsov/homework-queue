@@ -1,1 +1,3 @@
-# homework-node
+# Тестовое задание
+
+/users/dsorin/qa/
