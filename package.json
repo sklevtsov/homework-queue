@@ -20,6 +20,10 @@
     "mocha": "2.5.3",
     "eslint": "2.12.0"
   },
+  "scripts": {
+    "test": "npm run test-node",
+    "test-node": "mocha -R spec ./test/linkedList.js"
+  },
   "engines": {
     "node": ">=6"
   }
