@@ -4,4 +4,11 @@
 
 if [ $? -ne 0 ]; then
   exit 1
+else
+
+  ./node_modules/.bin/eslint test/
+  if [ $? -ne 0 ]; then
+    exit 1
+  fi
+
 fi
