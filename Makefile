@@ -16,7 +16,7 @@ build::
 	@ln -fs ../../hooks/pre-commit .git/hooks/pre-commit
 	@chmod +x .git/hooks/pre-commit
 
-test-api::
+test::
 	LOGLEVEL=silent $(NODE_MODULES_PATH)/mocha \
 		-R spec \
 		--timeout 120000 --slow 30000 \
