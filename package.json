@@ -9,15 +9,18 @@
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/k03mad/homework-node.git"
+      "url": "https://github.com/k03mad/homework-node/"
     }
   ],
+  "bugs": {
+    "url": "https://github.com/k03mad/homework-node/issues"
+  },
   "dependencies": {
     "chai": "3.5.0",
     "mocha": "2.5.3",
     "eslint": "2.12.0"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   }
 }
