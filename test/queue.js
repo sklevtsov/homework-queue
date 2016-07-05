@@ -1,26 +1,28 @@
 'use strict';
 
-// const expect = require('chai').expect;
-// const LinkedList = require('../index.js');
+const expect = require('chai').expect;
+const Queue = require('../index.js');
 
-// describe('npm package tests', () => {
+describe('', () => {
 
-//     let list = new LinkedList();
+    let myQueue = new Queue();
 
-//     it('LinkedList should be a function', () => {
-//         expect(typeof LinkedList).to.equal('function');
-//     });
+    it('Queue should be a function', () => {
+        console.log(myQueue);
+        expect(typeof Queue).to.equal('function');
+    });
 
-//     it('list should be an object', () => {
-//         expect(typeof list).to.equal('object');
-//     });
+    it('new Queue() should be an object', () => {
+        expect(typeof myQueue).to.equal('object');
+    });
 
-//     it('should add 10 nodes', () => {
-//         for (let i = 0; i < 10; i++) {
-//             list.add(i + 1);
-//         }
+    it('queue should be empty by default', () => {
+        expect(myQueue.isEmpty()).to.be.true;
+    });
 
-//         expect(list.length).to.equal(10);
-//     });
+    it('queue should not be empty after elem add', () => {
+        myQueue.enqueue('first');
+        expect(myQueue.isEmpty()).to.be.false;
+    });
 
-// });
+});

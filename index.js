@@ -1,35 +1,17 @@
 'use strict';
 
-// function Node(data) {
-//     this.data = data;
-//     this.next = null;
-// }
+function Queue() {
 
-// function LinkedList() {
-//     this.length = 0;
-//     this.head = null;
-// }
+    let queue = [];
 
-// LinkedList.prototype.add = function(value) {
-//     let node = new Node(value);
-//     let currentNode = this.head;
- 
-//     if (!currentNode) {
-//         this.head = node;
-//         this.length++;
-         
-//         return node;
-//     }
- 
-//     while (currentNode.next) {
-//         currentNode = currentNode.next;
-//     }
- 
-//     currentNode.next = node;
- 
-//     this.length++;
-     
-//     return node;
-// };
+    this.enqueue = (item => {
+        queue.push(item);
+    });
 
-// module.exports = LinkedList;
+    this.isEmpty = (() => {
+        return (queue.length === 0);
+    });
+
+}
+
+module.exports = Queue;
