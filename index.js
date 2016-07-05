@@ -1,35 +1,35 @@
 'use strict';
 
-function Node(data) {
-    this.data = data;
-    this.next = null;
-}
+// function Node(data) {
+//     this.data = data;
+//     this.next = null;
+// }
 
-function LinkedList() {
-    this.length = 0;
-    this.head = null;
-}
+// function LinkedList() {
+//     this.length = 0;
+//     this.head = null;
+// }
 
-LinkedList.prototype.add = function(value) {
-    let node = new Node(value);
-    let currentNode = this.head;
+// LinkedList.prototype.add = function(value) {
+//     let node = new Node(value);
+//     let currentNode = this.head;
  
-    if (!currentNode) {
-        this.head = node;
-        this.length++;
+//     if (!currentNode) {
+//         this.head = node;
+//         this.length++;
          
-        return node;
-    }
+//         return node;
+//     }
  
-    while (currentNode.next) {
-        currentNode = currentNode.next;
-    }
+//     while (currentNode.next) {
+//         currentNode = currentNode.next;
+//     }
  
-    currentNode.next = node;
+//     currentNode.next = node;
  
-    this.length++;
+//     this.length++;
      
-    return node;
-};
+//     return node;
+// };
 
-module.exports = LinkedList;
+// module.exports = LinkedList;

@@ -20,4 +20,4 @@ test::
 	LOGLEVEL=silent $(NODE_MODULES_PATH)/mocha \
 		-R spec \
 		--timeout 120000 --slow 30000 \
-		test/linkedList.js
+		test/queue.js
