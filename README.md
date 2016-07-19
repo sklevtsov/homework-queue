@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/k03mad/homework-node.svg?branch=master)](https://travis-ci.org/k03mad/homework-node)
+[![Build Status](https://travis-ci.org/k03mad/homework-queue.svg?branch=master)](https://travis-ci.org/k03mad/homework-queue)
 
 ### Simple implementation of Queue.
 
