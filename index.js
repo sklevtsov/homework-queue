@@ -4,26 +4,26 @@ function Queue() {
 
     let queue = [];
 
-    this.enqueue = (value => {
+    this.enqueue = (value) => {
         queue.push(value);
-    });
+    };
 
-    this.isEmpty = (() => {
+    this.isEmpty = () => {
         return (queue.length === 0);
-    });
+    };
 
-    this.peek = (() => {
+    this.peek = () => {
         if (queue.length === 0) {
-            return 'queue is empty';
+            throw new Error('Queue is empty');
         } else {
             return queue[0];
         }
-    });
+    };
 
-    this.dequeue = (() => {
+    this.dequeue = () => {
 
         if (queue.length === 0) {
-            return 'queue is empty';
+            throw new Error('Queue is empty');
         } else {
 
             let elem = queue[0];
@@ -33,7 +33,7 @@ function Queue() {
 
         }
 
-    });
+    };
 
 }
 
