@@ -1,7 +1,3 @@
-NODE = $(shell which node)
-NPM = $(shell which npm)
-NODE_MODULES_PATH = ./node_modules/.bin
-
 all:: build
 
 clean::
@@ -11,13 +7,13 @@ clean::
 # default target
 build::
 	@echo "Install node dependencies..."
-	$(NPM) install --loglevel=warn
+	@npm install --loglevel=warn
 
 	@ln -fs ../../hooks/pre-commit .git/hooks/pre-commit
 	@chmod +x .git/hooks/pre-commit
 
 test::
-	LOGLEVEL=silent $(NODE_MODULES_PATH)/mocha \
+	LOGLEVEL=silent ./node_modules/.bin/mocha \
 		-R spec \
-		--timeout 120000 --slow 30000 \
+		--timeout 100 --slow 100 \
 		test/queue.js
