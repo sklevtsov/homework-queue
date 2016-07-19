@@ -16,12 +16,12 @@
     "url": "https://github.com/k03mad/homework-queue/issues"
   },
   "dependencies": {
-    "homework-node": "0.0.3"
+    "homework-node": "0.0.4"
   },
   "devDependencies": {
     "chai": "3.5.0",
     "mocha": "2.5.3",
-    "eslint": "2.12.0"
+    "eslint": "3.1.1"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha -R spec ./test/queue.js"
