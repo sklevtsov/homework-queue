@@ -14,5 +14,5 @@ $ npm install homework-queue
 
 ```js
 const Queue = require('homework-queue');
-let myQueue = new Queue();
+const myQueue = new Queue();
 ```
