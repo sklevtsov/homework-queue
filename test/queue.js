@@ -39,7 +39,6 @@ describe('Queue tests', () => {
     });
 
     describe('elems added', () => {
-
         const myQueue = new Queue();
 
         it('queue should not be empty after elem add', () => {
@@ -59,7 +58,6 @@ describe('Queue tests', () => {
     });
 
     describe('elems dequeue', () => {
-
         const myQueue = new Queue();
 
         it('dequeue should return first elem', () => {
