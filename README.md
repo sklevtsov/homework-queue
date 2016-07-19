@@ -4,7 +4,7 @@
 
 A queue is a first-in-first-out (FIFO) data structure - items are added to the end of the queue and removed from the front.
 
-NPM link: https://www.npmjs.com/package/homework-node
+NPM link: https://www.npmjs.com/package/homework-queue
 
 ### Install & use:
 
