@@ -18,7 +18,7 @@ const myQueue = new Queue();
 
 // add element to queue
 myQueue.enqueue(value)
-// check queue for emptiness
+// return true if queue is empty
 myQueue.isEmpty()
 // return first element of queue
 myQueue.peek()
