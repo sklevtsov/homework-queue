@@ -15,4 +15,13 @@ $ npm install homework-queue
 ```js
 const Queue = require('homework-queue');
 const myQueue = new Queue();
+
+// add element to queue
+myQueue.enqueue(value)
+// check queue for emptiness
+myQueue.isEmpty()
+// return first element of queue
+myQueue.peek()
+// return first element and delete it from queue
+myQueue.dequeue()
 ```
