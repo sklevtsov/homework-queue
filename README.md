@@ -6,10 +6,6 @@ A queue is a first-in-first-out (FIFO) data structure - items are added to the e
 
 ### How-to:
 
-```node
-$ npm install homework-queue
-```
-
 ```js
 const Queue = require('homework-queue');
 const myQueue = new Queue();
