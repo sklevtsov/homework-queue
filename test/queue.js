@@ -11,12 +11,6 @@ describe('Queue tests', () => {
         expect(Queue).to.be.a('function');
     });
 
-    it('new Queue() should be an object', () => {
-        const myQueue = new Queue();
-
-        expect(myQueue).to.be.an('object');
-    });
-
     describe('empty by default', () => {
         const myQueue = new Queue();
 
