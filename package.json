@@ -1,5 +1,5 @@
 {
-  "name": "homework-node",
+  "name": "homework-queue",
   "version": "0.1.0",
   "description": "simple implementation of queue",
   "private": false,
