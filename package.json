@@ -1,6 +1,6 @@
 {
   "name": "homework-queue",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "simple implementation of queue",
   "private": false,
   "maintainers": [
@@ -16,7 +16,8 @@
     "url": "https://github.com/k03mad/homework-queue/issues"
   },
   "dependencies": {
-    "homework-node": "0.1.0"
+    "homework-node": "0.1.0",
+    "debug": "2.2.0"
   },
   "devDependencies": {
     "chai": "3.5.0",
@@ -24,7 +25,7 @@
     "eslint": "3.1.1"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha -R spec ./test/queue.js"
+    "test": "DEBUG=tests,queue ./node_modules/.bin/mocha -R spec ./test/queue.js"
   },
   "license": "MIT",
   "engines": {

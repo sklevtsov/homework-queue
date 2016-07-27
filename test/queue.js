@@ -5,6 +5,10 @@ const Queue = require('../index.js');
 const expect = require('chai').expect;
 const assert = require('chai').assert;
 
+const debug = require('debug');
+const testsDebug = debug('tests');
+testsDebug(`Queue is a ${Queue}`);
+
 describe('Queue tests', () => {
 
     it('Queue should be a function', () => {
