@@ -1,9 +1,9 @@
 'use strict';
 
+const Queue = require('../index.js');
+
 const expect = require('chai').expect;
 const assert = require('chai').assert;
-
-const Queue = require('../index.js');
 
 describe('Queue tests', () => {
 

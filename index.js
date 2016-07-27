@@ -2,38 +2,40 @@
 
 const Node = require('homework-node');
 
-function Queue() {
+class Queue {
 
-    const singleList = new Node();
+    constructor() {
+        this.singleList = new Node();
+    }
 
-    this.enqueue = (value) => {
-        singleList.addNext(value);
-    };
+    enqueue(value) {
+        (this.singleList).addNext(value);
+    }
 
-    this.isEmpty = () => {
-        return (singleList.head === null);
-    };
+    isEmpty() {
+        return ((this.singleList).head === null);
+    }
 
-    this.peek = () => {
-        if (singleList.head === null) {
+    peek() {
+        if ((this.singleList).head === null) {
             throw new Error('Queue is empty');
         } else {
-            return singleList.head.value;
+            return (this.singleList).head.value;
         }
-    };
+    }
 
-    this.dequeue = () => {
-        if (singleList.head === null) {
+    dequeue() {
+        if ((this.singleList).head === null) {
             throw new Error('Queue is empty');
         } else {
 
-            let elem = singleList.head.value;
-            singleList.head = singleList.head.next;
+            let elem = (this.singleList).head.value;
+            (this.singleList).head = (this.singleList).head.next;
 
             return elem;
 
         }
-    };
+    }
 
 }
 
